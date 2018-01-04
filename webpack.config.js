@@ -30,7 +30,8 @@ const imgloader = {
 const client = {
     devtool: devtool,
     entry: {
-        example: ["babel-polyfill", path.resolve(__dirname, "client/module/example/index.js")]
+        example: ["babel-polyfill", path.resolve(__dirname, "client/module/example/index.js")],
+        ssr16: path.resolve(__dirname, "client/module/example/ssr16index.js")
     },
     output: {
         path: path.join(__dirname, "build", "client"),
