@@ -7,7 +7,8 @@ const Html = (props) => {
         <html>
             <head><title>App</title></head>
             <body>
-                <SSR16 />
+                <div id="root"><SSR16 /></div>
+                <script src="client/ssr16.bundle.js"></script>
             </body>
         </html>
     )
